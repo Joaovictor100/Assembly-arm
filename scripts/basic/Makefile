@@ -9,4 +9,5 @@ all:
 	ld -o $(EXE) $(OBJ)
 
 clean:
-	rm -f *.out *.o
+	rm -f *.o
+	find . -type f ! -name "*.*" -executable -exec rm -f {} +
